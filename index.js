@@ -1,3 +1,9 @@
+let link1 = 'https://t.me/typology_nasralishe';
+let link2 = 'https://t.me/github.com';
+let link4 = 'https://media.tenor.com/iohRIQ_1dHAAAAAM/youve-been-pranked-chris.gif';
+
+let add1 = '/ticketbot';
+
 console.log('любопытной варваре на базаре нос оторвали... :)');
 console.log('возможно, на сайте есть какие-то интересные пасхалки. удачи найти все');
 
@@ -12,4 +18,8 @@ function solve(num) {
 
 function message() {
   alert('увы, пришлось вырезать контент с этой картинки :(');
+}
+
+function btnLink(lnk) {
+  location.href = lnk;
 }
