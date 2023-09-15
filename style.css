@@ -108,6 +108,30 @@ ul center button {
   color: #8FCB9B;
 }
 
+ul center button:hover {
+  margin-left: -30px;
+  padding: 10px;
+  display: block;
+  width: 75%;
+  font-family: 'Font';
+  border-radius: 15px;
+  border: none;
+  background-color: #b9dfc0;
+  color: #12130F;
+}
+
+ul center button:disabled:hover {
+  margin-left: -30px;
+  padding: 10px;
+  display: block;
+  width: 75%;
+  font-family: 'Font';
+  border-radius: 15px;
+  border: none;
+  background-color: #555;
+  color: #489d59;
+}
+
 button:disabled, button[disabled] {
   margin-left: -30px;
   padding: 10px;
