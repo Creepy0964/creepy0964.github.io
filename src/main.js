@@ -10,12 +10,6 @@ import twitch from './img/twitch.png';
 function Index() {
     return(
     <main>
-      <div className="topnav">
-        <a className="active" href="/">Главная</a>
-        <a href="https://github.com/creepy0964">GitHub</a>
-        <a href="https://yyyyyyy.info/">Пожертвовать</a>
-      </div>
-
       <h1 className="title">
         Creepy0964
       </h1>
@@ -47,7 +41,6 @@ function Index() {
       <div className="main">
         <p>мои проекты</p>
         <ul>
-          <center><a href='./music.js'><button>моя музыка (в процессе переноса под реакт)</button></a></center>
           <center><a href='https://t.me/typology_nasralishe'><button>типологическое насралище - типологии для маленьких и тупых</button></a></center>
           <center><a href='https://creepy0964.github.io/psychosophy'><button>сайт для знатоков психософии</button></a></center>
           <center><a href='https://github.com/creepy0964/ticketbot'><button>TicketBot - бот ТГ для фильтрации жалоб и модерации беседы (в разработке)</button></a></center>

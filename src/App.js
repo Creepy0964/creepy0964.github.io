@@ -6,21 +6,45 @@ import Music from './music.js';
 class App extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {isMusic: false};
+    this.state = {
+      isMusic: false,
+    };
 
-    this.handleClick = this.handleClick.bind(this);
+    this.musicOff = this.musicOff.bind(this);
+    this.musicOn = this.musicOn.bind(this);
   }
 
-  handleClick() {
+  active = {
+    backgroundColor: '#8fcb9b',
+    color: '#12130f'
+  }
+
+  noActive = {
+    backgroundColor: '#333',
+    color: '#f2f2f2'
+  }
+
+  musicOn() {
     this.setState(prevState => ({
-      isMusic: !prevState.isMusic
+      isMusic: true
+    }));
+  }
+
+  musicOff() {
+    this.setState(prevState => ({
+      isMusic: false
     }));
   }
 
   render() {
     return(
       <div className='App'>
-        <button onClick={this.handleClick}>Переключить страницу (Главная/Музыка)</button>
+        <div class="topnav">
+            <button onClick={this.musicOff} style={this.state.isMusic ? this.noActive : this.active}>Главная</button>
+            <button onClick={this.musicOn} style={this.state.isMusic ? this.active : this.noActive}>Музыка</button>
+            <a href="https://github.com/creepy0964">GitHub</a>
+            <a href="https://yyyyyyy.info/">Пожертвовать</a>
+        </div>        
         {this.state.isMusic ? <Music/> : <Index/>}
       </div>
     );
