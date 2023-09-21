@@ -40,10 +40,10 @@ class App extends React.Component {
     return(
       <div className='App'>
         <div class="topnav">
-            <button onClick={this.musicOff} style={this.state.isMusic ? this.noActive : this.active}>Главная</button>
-            <button onClick={this.musicOn} style={this.state.isMusic ? this.active : this.noActive}>Музыка</button>
-            <a href="https://github.com/creepy0964">GitHub</a>
-            <a href="https://yyyyyyy.info/">Пожертвовать</a>
+          <button onClick={this.musicOff} style={this.state.isMusic ? this.noActive : this.active}>Главная</button>
+          <button onClick={this.musicOn} style={this.state.isMusic ? this.active : this.noActive}>Музыка</button>
+          <a href="https://github.com/creepy0964">GitHub</a>
+          <a href="https://yyyyyyy.info/">Пожертвовать</a>
         </div>        
         {this.state.isMusic ? <Music/> : <Index/>}
       </div>
